@@ -1,0 +1,78 @@
+/* Toggle Buttons */
+.toggle button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    color: darkgray;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.toggle .active {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarges active button */
+}
+
+/* Date Dropdown */
+.date-dropdown select {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    font-weight: bold;
+    width: 93%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Strategy Cards Container */
+.strategy-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Cards */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 90%;
+    border-radius: 12px; /* Rounded corners for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Strategy Row */
+.strategy-row {
+    display: flex;
+    justify-content: space-between;  /* Aligns the name on the left and count on the right */
+}
+
+.strategy-row p {
+    margin: 0;
+}
+
+/* Empty State Message */
+.empty-state {
+    margin-top: 20px;
+    color: #888;
+    font-style: italic;
+}
+
+/* General Styling for Layout */
+.content-row {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between dropdown and cards */
+}
+
